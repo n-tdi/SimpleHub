@@ -1,0 +1,8 @@
+name: SimpleHub
+version: '${project.version}'
+main: world.ntdi.simplehub.SimpleHub
+api-version: 1.16
+prefix: SimpleHub
+authors: [ Ntdi ]
+description: A simple hub for BauAPI
+website: professional-tdi.github.io
