@@ -1,0 +1,5 @@
+sethotbar {
+    user player
+    hook sethotbar
+    permission bauapi.sethotbar
+}
