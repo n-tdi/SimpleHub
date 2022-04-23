@@ -16,7 +16,7 @@ public class CompassGUI {
     private InventoryGUI gui;
 
     public CompassGUI(Player p) {
-        gui = new InventoryGUI(Bukkit.createInventory(null, 6*9, ""));
+        gui = new InventoryGUI(Bukkit.createInventory(null, 6*9, TranslateColorCodes.translateColor("&8» &9&lNavigator&8:")));
         makeItems();
         gui.open(p);
     }
@@ -38,7 +38,7 @@ public class CompassGUI {
         ItemStack concrete = new ItemBuilder(Material.BLUE_CONCRETE)
                 .addItemFlags(ItemFlag.HIDE_ENCHANTS)
                 .addEnchant(Enchantment.LURE, 1)
-                .setName(TranslateColorCodes.translateColor("&8» &9&lParty games"));
+                .setName(TranslateColorCodes.translateColor("&8» &9&lPartygames"));
 
 
         ItemButton pickaxeButton = ItemButton.create(pickaxe, e -> {
