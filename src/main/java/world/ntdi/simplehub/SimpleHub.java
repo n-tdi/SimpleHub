@@ -8,9 +8,7 @@ import redempt.redlib.commandmanager.ArgType;
 import redempt.redlib.commandmanager.CommandParser;
 import redempt.redlib.enchants.EnchantRegistry;
 import world.ntdi.simplehub.Commands.setHotBarCMD;
-import world.ntdi.simplehub.Listener.InteractListener;
-import world.ntdi.simplehub.Listener.InventoryListener;
-import world.ntdi.simplehub.Listener.JoinListener;
+import world.ntdi.simplehub.Listener.*;
 
 
 public final class SimpleHub extends JavaPlugin {
@@ -43,6 +41,9 @@ public final class SimpleHub extends JavaPlugin {
         regList(new JoinListener());
         regList(new InventoryListener());
         regList(new InteractListener());
+        regList(new TimeListener());
+        regList(new DamageListener());
+        regList(new BlockListener());
     }
 
     public void regList(Listener listener){
