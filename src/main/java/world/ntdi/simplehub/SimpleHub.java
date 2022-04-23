@@ -30,10 +30,10 @@ public final class SimpleHub extends JavaPlugin {
     }
 
     public void registeRedLib(){
-        ArgType<World> worldType = new ArgType<>("world", Bukkit::getWorld).tabStream(c -> Bukkit.getWorlds().stream().map(World::getName));
+        //ArgType<World> worldType = new ArgType<>("world", Bukkit::getWorld).tabStream(c -> Bukkit.getWorlds().stream().map(World::getName));
 
         new EnchantRegistry(this).registerAll(this);
-        new CommandParser(this.getResource("command.rdcml")).setArgTypes(worldType).parse().register("tazpvp", this,
+        new CommandParser(this.getResource("command.rdcml")).parse().register("tazpvp", this,
                 new setHotBarCMD()
         );
 
